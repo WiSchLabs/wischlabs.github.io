@@ -26,6 +26,8 @@ jobs:
         tar -xf ${LATEST_VERSION}.tar.gz -C uberpage --strip-components 1
         rm -f ${LATEST_VERSION}.tar.gz
 
+        rm -rf static precache-manifest*
+
         cp -f data.js uberpage/uberpage/src/data.js
         cd uberpage/uberpage
         find public/img -not -iname "*uberpage*" -type f -delete
