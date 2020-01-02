@@ -19,10 +19,11 @@ jobs:
         wget https://github.com/StegSchreck/uberpage/archive/${LATEST_VERSION}.tar.gz || exit
         mkdir -p uberpage
         tar -xf ${LATEST_VERSION}.tar.gz -C uberpage --strip-components 1
-        rm ${LATEST_VERSION}.tar.gz
+        rm -f ${LATEST_VERSION}.tar.gz
 
         cp -f data.js uberpage/uberpage/src/data.js
         cd uberpage/uberpage
+        find public/img -not -iname "*uberpage*" -type f -delete
         npm install -g npm@latest
         npm ci
         ../scripts/adjust_homepage.sh "https://wischlabs.github.io"

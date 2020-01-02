@@ -25,6 +25,7 @@ export default {
       text_color: '#000000',
       description: 'Kotlin based Sudoku solver',
       background_logo: 'Sudoklin_.png',
+      background_logo_size: 'contain',
       background_color: '#FFFFFF',
     },
     {

@@ -1,5 +1,9 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+# uberpage stuff
+/uberpage
+/img
+
 # compiled output
 /dist
 /tmp
@@ -7,7 +11,6 @@
 
 # dependencies
 /node_modules
-/uberpage
 
 # IDEs and editors
 /.idea
