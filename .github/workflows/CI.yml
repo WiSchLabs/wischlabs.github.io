@@ -12,7 +12,7 @@ jobs:
     - name: Use Node.js 13.x
       uses: actions/setup-node@v1
       with:
-      node-version: 13.x
+        node-version: 13.x
     - name: npm install and build
       run: |
         LATEST_VERSION=$(curl -s https://api.github.com/repos/StegSchreck/uberpage/releases/latest | grep -oP '"tag_name": "\K(.*)(?=")')
